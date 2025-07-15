@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  overflow-x: hidden; /* Prevent horizontal scrollbar */
+}
+
+/* colour themes */
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-csclub-dark text-white;
+    font-family: "Inter", sans-serif;
+  }
+}
+
+/* spacing and layout */
+/* font size and text colours */
+@layer components {
+  .nav-item {
+    @apply relative px-4 py-2 text-white hover:text-csclub-orange transition-colors;
+  }
+
+  .dropdown {
+    @apply invisible absolute top-full left-0 mt-1 w-48 rounded-md bg-csclub-dark border border-csclub-orange/30 opacity-0 transition-all duration-200 z-10;
+  }
+
+  .nav-item:hover .dropdown {
+    @apply visible opacity-100;
+  }
+
+  .dropdown-item {
+    @apply block px-4 py-2 text-sm text-white hover:bg-csclub-orange/20 transition-colors w-full text-left;
+  }
+
+  .social-icon {
+    @apply text-csclub-orange hover:text-csclub-lightblue transition-colors;
+  }
+}
