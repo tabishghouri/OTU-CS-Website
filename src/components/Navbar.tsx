@@ -1,14 +1,15 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { ChevronDown } from "lucide-react";
-import csLogo from "../assets/images/computer-svgrepo-com.svg";
+// import csLogo from "../assets/images/cslogo-transparent-background.png";
 
 // CS Club Logo component
-const CSLogo = () => (
-  <Link to='/' className='flex items-center'>
-    <img src={csLogo} alt='CS Club Logo' className='h-32 w-auto' />
-  </Link>
-);
+// const CSLogo = () => (
+//   <Link to='/' className='flex items-center'>
+//     <img src={csLogo} alt='CS Club Logo' className='h-24 w-auto' />
+//   </Link>
+// );
+// felt reduntant to have^ can fix later tho
 
 // Dropdown menu component
 interface DropdownProps {
@@ -51,7 +52,7 @@ const Navbar = () => {
 
   return (
     <nav className='py-4 px-6 md:px-12 flex items-center justify-between relative z-10'>
-      <CSLogo />
+      {/* <CSLogo /> */}
 
       {/* Mobile menu button */}
       <button

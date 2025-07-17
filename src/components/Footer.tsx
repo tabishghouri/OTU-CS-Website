@@ -1,14 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Instagram, Twitter, MessageSquare } from "lucide-react";
-import CSLogo from "../assets/images/computer-svgrepo-com.svg";
+import csLogo from "../assets/logos/cslogo-transparent-background.png";
 const Footer: React.FC = () => {
   return (
     <footer className='border-t border-white/10 py-8 px-6 md:px-12'>
       <div className='max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8'>
         <div>
           <Link to='/' className='flex items-center mb-4'>
-            <img src={CSLogo} alt='CS Club Logo' className='h-32 w-auto' />
+            <img src={csLogo} alt='CS Club Logo' className='h-12 w-auto' />
 
             <span className='ml-2 text-xl font-bold'>CS Club</span>
           </Link>
