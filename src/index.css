@@ -8,10 +8,6 @@ body {
 
 /* colour themes */
 @layer base {
-  * {
-    @apply border-border;
-  }
-
   body {
     @apply bg-csclub-dark text-white;
     font-family: "Inter", sans-serif;
@@ -40,22 +36,4 @@ body {
   .social-icon {
     @apply text-csclub-orange hover:text-csclub-lightblue transition-colors;
   }
-}
-
-.event-gradient-overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(to top right, #1b0049, #380098);
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-  border-radius: 0.5rem; /* matches rounded-lg */
-  z-index: 10;
-}
-
-.group:hover .event-gradient-overlay {
-  opacity: 0.9;
-}
-
-:root {
-  --radius: 0.5rem;
 }

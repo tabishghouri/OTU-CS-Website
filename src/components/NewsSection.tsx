@@ -11,7 +11,7 @@ const NewsSection: React.FC = () => {
           <Link
             to='/news'
             style={{ color: "#ECAD2D" }}
-            className='hover:opacity-80'
+            className='hover:opacity-80 underline'
           >
             here
           </Link>

@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.event-gradient-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top right, #1b0049, #380098);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 0.5rem; /* matches rounded-lg */
+  z-index: 10;
+}
+
+.group:hover .event-gradient-overlay {
+  opacity: 0.9;
+}
+
+:root {
+  --radius: 0.5rem;
+}
+
+.more-info-text {
+  @apply text-white text-xl font-semibold opacity-0 group-hover:opacity-100 
+         hover:underline hover:text-orange-200 transition duration-200;
+}
