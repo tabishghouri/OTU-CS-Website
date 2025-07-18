@@ -1,6 +1,7 @@
 import React from "react";
 import { Instagram, Twitter, MessageSquare } from "lucide-react";
 import CSLogo from "../assets/logos/cslogo-transparent-background.png";
+import "./Landing.css";
 
 const Landing: React.FC = () => {
   return (
@@ -37,7 +38,7 @@ const Landing: React.FC = () => {
 
       {/* CS Club Logo */}
       <div className='mb-6'>
-        <img src={CSLogo} alt='CS Club Logo' className='h-32 w-auto' />
+        <img src={CSLogo} alt='CS Club Logo' className='cs-logo' />
       </div>
 
       {/* Club Name */}

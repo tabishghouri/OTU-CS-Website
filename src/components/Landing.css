@@ -1,0 +1,35 @@
+/* CS Logo - Float on Hover */
+.cs-logo {
+  height: 8rem;
+  width: auto;
+  filter: drop-shadow(0 0 10px rgba(128, 0, 255, 0.4));
+  transition: filter 0.4s ease-out,
+    transform 0.5s cubic-bezier(0.17, 0.67, 0.21, 0.99);
+}
+
+.cs-logo:hover {
+  animation: float 1.5s ease-in-out infinite;
+  filter: drop-shadow(0 0 15px rgba(128, 0, 255, 0.7))
+    drop-shadow(0 0 30px rgba(128, 0, 255, 0.2));
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-2px);
+  }
+}
+
+.social-icon {
+  transition: all 0.3s ease, transform 0.4s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+  filter: drop-shadow(0 0 5px rgba(128, 0, 255, 0.3));
+}
+
+.social-icon:hover {
+  animation: float 1.2s ease-in-out infinite;
+  filter: drop-shadow(0 0 12px rgba(128, 0, 255, 0.7))
+    drop-shadow(0 0 20px rgba(128, 0, 255, 0.2));
+}
